@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="script.js"></script>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="quiz, test, cultura, generala, proiect, unibuc, fmi, cllaire, github">
+		<meta name="description" content="Proiect JavaScript -- Test Cultura Generala">
+		<meta name="author" content="Ana-Cristina Rogoz">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Test: Cultura Generala </title>
+	</head>
+
+	<body>
+		<section id="Intro">
+			<div id="Header">
+				<p id="Cronometru"> </p>
+				<p id="Data"> </p>
+			</div>
+			<header><h1>Test: Cultura Generala</h1></header>
+			<div id="DatePersonale">
+				<p> Prenume:  <input type="text" name="Prenume" value=""> </p>
+				<p> Nume: <input type="text" name="Nume" value=""> </p> <br>
+				<input id="ButonIncepeTestul" type="button" value="Incepe Testul!"> 
+			</div>
+
+			<div id="font" onclick="schimbafont()"> Schimba fontul! </div> 
+		</section>
+
+		<section id="Intrebarea1">
+			<h2> 1. In ce an a avut loc Batalia de la Rovine?</h2>
+			<ul> 
+				<li> <input class="RaspunsCorect" type="radio"> 1395 </li>
+				<li> <input class="RaspunsGresit" type="radio"> 1390</li>
+				<li> <input class="RaspunsGresit" type="radio"> 1407</li>
+				<li> <input class="RaspunsGresit" type="radio"> 1386</li>
+			</ul>
+			<input class="ButonSubmit" id="buton1" type="submit" value="Valideaza Raspunsul!"> 
+		</section>
+
+		<section id="Intrebarea2">
+			<h2> 2. Care este capitala Malaeziei? </h2>
+			<ul> 
+				<li> <input class="RaspunsGresit" type="radio"> New Delhi </li>
+				<li> <input class="RaspunsCorect" type="radio"> Islamabad </li>
+				<li> <input class="RaspunsGresit" type="radio"> Kuala Lumpur </li>
+				<li> <input class="RaspunsGresit" type="radio"> Porto Novo</li>
+			</ul>
+			<input class="ButonSubmit" id="buton2" type="submit" value="Valideaza Raspunsul!"> 
+		</section>
+
+		<section id="Intrebarea3">
+			<h2> 3. Ordonati in ordine cronologica urmatoarele evenimente istorice. </h2> 
+				<div id="Optiuni">
+					<br>
+					<div id="Evenimentul2" draggable="true" ondragstart="drag(event)"> Sfarsitul domniei lui Mihai Viteazul </div> 
+					<div id="Evenimentul3" draggable="true" ondragstart="drag(event)"> Caderea Bastiliei </div> 
+					<div id="Evenimentul1" draggable="true" ondragstart="drag(event)"> Retragerea Aureliana </div> 
+					<div id="Evenimentul4" draggable="true" ondragstart="drag(event)"> Incoronarea Regelui Carol I al Romaniei </div>
+				</div>
+
+				<div id="Casute">
+					<br>
+					<div id="Casuta1" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+					<div id="Casuta2" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+					<div id="Casuta3" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+					<div id="Casuta4" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+				</div>
+			<input class="ButonSubmit" id="buton3" type="submit" value="Valideaza Raspunsul!"> 
+		</section>
+
+		<section id="Intrebarea4">
+			<h2> 4. Care dintre urmatoarele poligoane este regulat? </h2>
+				<div class="Poligon">
+					<canvas id="Poly1"></canvas>
+					<input class="RaspunsGresit" type="radio">
+				</div>
+				
+				<div class="Poligon">
+					<canvas id="Poly2"></canvas>
+					<input class="RaspunsCorect" type="radio">
+				</div>
+
+				<div class="Poligon">
+					<canvas id="Poly3"></canvas>
+					<input class="RaspunsGresit" type="radio">
+				</div>
+
+				<div class="Poligon">
+					<canvas id="Poly4"></canvas>
+					<input class="RaspunsGresit" type="radio">
+				</div>
+			
+			<br>
+			<input class="ButonSubmit" id="buton4" type="submit" value="Valideaza Raspunsul!"> 
+		</section>
+
+		<section id="Intrebarea5">
+			<h2> 5. Care dintre urmatoarele cantitati este cea mai grea? </h2>
+			<ul> 
+				<li> <input class="RaspunsGresit" type="radio"> 1kg fulgi </li>
+				<li> <input class="RaspunsGresit" type="radio"> 1kg ciment </li>
+				<li> <input class="RaspunsCorect" type="radio"> sunt egale </li>
+				<li> <input class="RaspunsGresit" type="radio"> 1kg de zahar </li>
+			</ul>
+			<input class="ButonSubmit" id="buton5" type="submit" value="Valideaza Raspunsul!"> 
+		</section>
+
+		<section id="Intrebarea6">
+			<h2> 6. Selectati capitalele prin care trece Dunarea. </h2>
+			<ul> 
+				<li> <input class="RaspunsCorect" type="checkbox"> Viena </li>
+				<li> <input class="RaspunsCorect" type="checkbox"> Bratislava </li>
+				<li> <input class="RaspunsCorect" type="checkbox"> Budapesta </li>
+				<li> <input class="RaspunsGresit" type="checkbox"> Berlin </li>
+			</ul>
+			<input class="ButonSubmit" id="buton6" type="submit" value="Valideaza Raspunsul!"> 
+		</section>
+
+		<section id="Intrebarea7">
+			<h2> 7. Care este rezultatul urmatoarei secvente: 1+1*2-5+7^2*3? </h2>
+			<ul> 
+				<li> <input class="RaspunsGresit" type="radio"> 125 </li>
+				<li> <input class="RaspunsGresit" type="radio"> 150 </li>
+				<li> <input class="RaspunsCorect" type="radio"> 145 </li>
+				<li> <input class="RaspunsGresit" type="radio"> 100 </li>
+			</ul>
+			<input class="ButonSubmit" id="butonfinal" type="submit" value="Valideaza Raspunsul!"> 
+		</section>
+
+		<section id="Rezultat">
+			<h1> Rezultat </h1>
+			<ul id="Statistici">
+				<li> Raspunsuri corecte: </li>
+				<li> Raspunsuri gresite: </li>
+				<li> Acuratete raspunsuri: </li>
+				<li> Scor: </li>
+				<li> Timp test: </li>
+			</ul>
+			<input class="ButonSubmit" id="butonclasament" type="submit" value="Vezi Clasamentul!"> 
+		</section>
+
+		<section id="Clasament">
+			<h1> Clasament </h1>
+				<div class="Persoana"> 
+					<p class="Nume"> Andrei Ionescu</p>
+					<p> 700 </p>
+				</div>
+				<div class="Persoana"> 
+					<p class="Nume"> Maria Pandele</p>
+					<p> 680 </p>
+				</div>
+				<div class="Persoana">
+					<p class="Nume"> Ana Rogoz </p>
+					<p> 620 </p> 
+				</div>
+
+			<footer>
+				Pentru a iti sterge numele din clasament apasa tasta D!
+			</footer>
+		</section>
+
+	</body>
+</html>
