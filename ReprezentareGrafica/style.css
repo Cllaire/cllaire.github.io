@@ -1,0 +1,49 @@
+body {
+	font-family: Verdana;
+}
+header{
+	font-size: 4vh;
+}
+
+canvas {
+	height: 500px;
+	width: 600px;
+	border: 2px solid black;
+	margin-right: 5vw;
+}
+
+input {
+	width: 3vw;
+}
+#valid1, #valid2 {
+	width: 7vw;
+}
+
+#valid3 {
+	width: 10vw;
+}
+
+.structura {
+	display: inline-block;
+}
+
+#div2 {
+	position: relative;
+	bottom: 30vh;
+	margin-right: 5vw;
+}
+
+#div3 {
+	position: relative;
+	bottom: 26vh;
+	margin-right: 5vw;
+}
+
+#div4 {
+	position: relative;
+	bottom: 26vh;
+}
+
+#triang {
+	width: 10vw;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<title> Reprezentare Grafica </title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="data.js"></script>
+	</head>
+
+	<body>
+		<header> Reprezentare Grafica </header>
+		<br>
+		<h2> Cerinta: </h2>
+		<p> Pozitia unui punct fata de un poligon convex. <br>
+			<br>
+			Input: Un poligon convex P din R^2 si un punct A ∈ R^2. <br>
+			<br>
+			Output: Precizeaza pozitia lui A fata de P (in interior, pe laturi, in exterior), folosind o impartire convenabila pe sectoare. Reprezentare grafica.
+		</p>
+		<div id="div1">
+			<canvas class="structura" id="axe">
+			
+			</canvas>
+			<div class="structura" id="div2"> 
+				<p> Introduceti numarul de puncte: </p> 
+				<p> n: <input type="text" name="nr_puncte"> </p> <br>
+				<input type="submit" value="Valideaza!" id="valid1"> 
+			</div> 
+			<div class="structura" id="div3"> 
+				<p> Introduceti punctele: </p> 
+				<p> x: <input type="text" name="ox"> </p> 
+				<p> y: <input type="text" name="oy"> </p> <br>
+				<input type="submit" value="Valideaza!" id="valid2"> 
+			</div> 
+			<div class="structura" id="div4"> 
+				<p> Introduceti punctul de testat: </p> 
+				<p> xA: <input type="text" name="xA"> </p> 
+				<p> yA: <input type="text" name="yA"> </p> <br>
+				<input type="submit" value="Valideaza!" id="valid3"> 
+			</div> 
+		</div>
+		<br>
+		<input type="submit" value="Triangularizati!" id="triang"> 
+		<br> <br> <br> <br>
+		<footer>
+			<h5> *Coordonatele tuturor punctelor trebuie sa fie intre 1-299 pe OX si 1-149 pe OY. </h5>
+		</footer>
+	</body>
+
+</html>
